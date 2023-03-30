@@ -1,30 +1,5 @@
 #!/bin/bash 
   
- ############################################################################### 
- # 
- # configure-kiosk.sh 
- # 
- # 
- #
- # 
- # Configures a fresh installation of Xubuntu to convert it into a kiosk which 
- # only runs a web application within Google Chrome. A user is created, named 
- # kiosk, whose account can only be accessed by automatically launching an X 
- # session (password is disabled). That X session doesn't include any desktop 
- # environment but instead runs Google Chrome in fullscreen kiosk mode. 
- # 
- # Usage: Launch as root (or with root permissions): 
- #   $ sudo ./configure-kiosk.sh 
- # 
- #   Tested on: 
- # 
- #       Xubuntu 17.04 
- # 
- # Other Ubuntu relatives will probably work fine, but I've only tested it on 
- # the above list. 
- # 
- ############################################################################### 
-  
  launch_dir=`pwd` 
  readonly START_TIME=`date +%Y-%m-%dT%H:%M:%S` 
  readonly LOG_DIR="logs" 
